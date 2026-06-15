@@ -23,14 +23,14 @@ warnings.filterwarnings("ignore")
 
 # ─── Config ────────────────────────────────────────────────────────────────────
 
-EPUB_PATH       = "/home/anshuman/Desktop/LOTM/Clown-LotM-Vol.1.epub"
-REF_AUDIO_PATH  = "/home/anshuman/Desktop/LOTM/ref_voice/vocals.wav"
+EPUB_PATH       = "/home/anshuman/Documents/local-ai-projects/audiobook-lotm/epubs/Clown-LotM-Vol.1.epub"
+REF_AUDIO_PATH  = "/home/anshuman/Documents/local-ai-projects/audiobook-lotm/ref_voice/vocals.wav"
 REF_TEXT        = (
     "Whichever potion I choose, the only thing bound to get me home is knowledge of mysticism. "
     "That rules out Sleepless and Corpse Collector. It's between Mystery Prior and Seer. "
     "But which would be more useful? Man this is even more stressful than choosing a major in college."
 )
-OUTPUT_DIR      = Path("/home/anshuman/Desktop/LOTM/audio")
+OUTPUT_DIR      = Path("/home/anshuman/Documents/local-ai-projects/audiobook-lotm/audio/")
 CHUNK_DIR       = OUTPUT_DIR / "chunks"
 CHAPTER_DIR     = OUTPUT_DIR / "chapters"
 FINAL_OUTPUT    = OUTPUT_DIR / "LOTM_Vol1_Klein.m4b"
@@ -40,8 +40,8 @@ SEED            = 559643366572128
 MODEL_CHOICE    = "Qwen/Qwen3-TTS-12Hz-1.7B-Base"
 MAX_WORDS       = 200             # words per TTS chunk
 MAX_RETRIES     = 3               # retry failed chunks this many times
-PAGE_START      = 40              # index_split_005.html  (Chapter 26 start) - 5 would be chapter 1
-PAGE_END        = 50              # index_split_011.html  (Chapter 36 end, inclusive)
+PAGE_START      = 5              # index_split_005.html  (Chapter 26 start) - 5 would be chapter 1
+PAGE_END        = 5              # index_split_011.html  (Chapter 36 end, inclusive)
 LANGUAGE        = "English"
 
 # Silence durations (ms)
